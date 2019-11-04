@@ -22,7 +22,7 @@ class Joke {
 @Component({
   selector: 'joke-form',
   template: `
-<div class="card card-block">
+<div class="card-body">
   <h4 class="card-title">Create Joke</h4>
   <div class="form-group">
     <input type="text"
@@ -55,14 +55,14 @@ class JokeFormComponent {
 @Component({
   selector: 'joke',
   template: `
-<div class="card card-block">
+<div class="card-body">
   <h4 class="card-title">
   	{{data.setup}}
   </h4>
   <p class="card-text"
      [hidden]="data.hide">{{data.punchline}}</p>
   <a (click)="data.toggle()"
-     class="btn btn-warning">Tell Me
+     class="btn btn-primary">Tell Me
   </a>
   <a (click)="deleteItem()"
      class="btn btn-danger">Delete
